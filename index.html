@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasad Kashid | Portfolio</title>
+    <meta name="description" content="Portfolio of Prasad Kashid, Full Stack Developer">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3b82f6",
+                        secondary: "#1e40af",
+                        accent: "#10b981"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-primary">Prasad Kashid</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-secondary">Home</a>
+                    <a href="#about" class="hover:text-secondary">About</a>
+                    <a href="#skills" class="hover:text-secondary">Skills</a>
+                    <a href="#experience" class="hover:text-secondary">Experience</a>
+                    <a href="#projects" class="hover:text-secondary">Projects</a>
+                    <a href="#contact" class="hover:text-secondary">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="block hover:text-secondary">Home</a>
+                    <a href="#about" class="block hover:text-secondary">About</a>
+                    <a href="#skills" class="block hover:text-secondary">Skills</a>
+                    <a href="#experience" class="block hover:text-secondary">Experience</a>
+                    <a href="#projects" class="block hover:text-secondary">Projects</a>
+                    <a href="#contact" class="block hover:text-secondary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Prasad Kashid</h1>
+                <h2 class="text-2xl md:text-3xl mb-6"> Java Full Stack Developer</h2>
+                <p class="text-lg mb-8">Building innovative web solutions with Java, Spring Boot, and React.js</p>
+                <div class="flex space-x-4">
+    <a href="#contact" class="bg-white text-primary px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition">Contact Me</a>
+    <a href="assets\Prasad_Resume.pdf" download class="border-2 border-white px-6 py-2 rounded-full font-medium hover:bg-white hover:text-primary transition">Download Resume</a>
+</div>
+
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="assets\DSC_4926.JPG" alt="Prasad Kashid" class="rounded-full w-64 h-64 object-cover border-4 border-white shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-semibold mb-4">Education</h3>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <h4 class="text-xl font-medium">Bharti Vidyapeeth University, Kolhapur</h4>
+                            <p class="text-gray-600">Master of Computer Science [MCA] 2023 – 2025</p>
+                            <p class="text-gray-600">CGPA: 8.4/10</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <h4 class="text-xl font-medium">Shivaji University, Kolhapur</h4>
+                            <p class="text-gray-600">BSc in Computer Science 2018 --2022</p>
+                            <p class="text-gray-600">Percentage: 70.43%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <h3 class="text-2xl font-semibold mb-4">Certifications</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <h4 class="text-xl font-medium">Fundamentals of Computer Systems - SWAYAM</h4>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <h4 class="text-xl font-medium">Android Mobile Application Development – SWAYAM</h4>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <h4 class="text-xl font-medium">Web-Based Technologies and Multimedia Applications – SWAYAM</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Languages</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>Java</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>JavaScript</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>HTML</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>CSS</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>SQL</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Frameworks & Technologies</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>Spring Boot</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>Hibernate</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>REST APIs</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>Microservices</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>Kafka</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Tools & Platforms</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>Git</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>GitHub</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>VS Code</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>IntelliJ IDEA</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>Postman</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>Maven</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Experience</h2>
+            <div class="space-y-8 max-w-3xl mx-auto">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-semibold">Java Developer Intern</h3>
+                            <p class="text-gray-600">Softron Software Developer and IT Consult, Kolhapur, India</p>
+                        </div>
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Jan 2025 – Apr 2025</span>
+                    </div>
+                    <ul class="mt-4 space-y-2 pl-5 list-disc">
+                        <li>Completed a self-paced internship focused on core Java and OOPs concepts</li>
+                        <li>Built small Java projects and solved real-world coding problems</li>
+                        <li>Gained practical understanding of object-oriented programming, exception handling, and file operations</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-semibold">Frontend Developer Intern</h3>
+                            <p class="text-gray-600">IBM Skill Build Virtual Intern</p>
+                        </div>
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Jul 2024 – Aug 2024</span>
+                    </div>
+                    <ul class="mt-4 space-y-2 pl-5 list-disc">
+                        <li>Completed a virtual internship focused on frontend development using HTML, CSS, JavaScript, and React</li>
+                        <li>Built responsive and user-friendly web pages and interfaces following modern UI/UX practices</li>
+                        <li>Gained practical experience with Git, version control, and collaborative project workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+<section id="projects" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Smart Email Assistant -->
+            <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                <img src="https://picsum.photos/600/300?random=2" alt="Smart Email Assistant" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-xl font-semibold mb-2">Smart Email Assistant</h3>
+                <p class="text-gray-600 mb-4">Spring Boot, Spring AI, React.js, Google Gemini, Chrome Extension</p>
+                <ul class="space-y-2 pl-5 list-disc">
+                    <li>Developed an AI-powered email assistant that generates smart replies based on sentiment analysis and user context</li>
+                    <li>Integrated Gmail API for real-time email access and dynamic response generation using Google Gemini models</li>
+                    <li>Enabled tone-adjusted replies (formal, friendly, concise), improving user productivity by 40%</li>
+                </ul>
+            </div>
+
+            <!-- E-commerce Platform -->
+            <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                <img src="https://picsum.photos/600/300?random=3" alt="E-commerce Platform" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-xl font-semibold mb-2">E-commerce Platform</h3>
+                <p class="text-gray-600 mb-4">Spring Boot, React.js, MySQL</p>
+                <ul class="space-y-2 pl-5 list-disc">
+                    <li>Designed and implemented a full-stack e-commerce system with authentication, product browsing, cart, and order management</li>
+                    <li>Developed secure RESTful APIs using Spring Boot and responsive UI using React.js</li>
+                    <li>Integrated MySQL with optimized queries, improving product search performance by 35%</li>
+                </ul>
+            </div>
+
+            <!-- Weather App -->
+            <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                <img src="https://picsum.photos/600/300?random=4" alt="Weather App" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-xl font-semibold mb-2">Weather App</h3>
+                <p class="text-gray-600 mb-4">HTML, CSS, JavaScript, Weather API</p>
+                <ul class="space-y-2 pl-5 list-disc">
+                    <li>Developed a responsive weather application that fetches live weather data from WeatherAPI</li>
+                    <li>Users can search for any city and get real-time weather conditions</li>
+                    <li>Implemented elegant UI with error handling for invalid inputs</li>
+                </ul>
+            </div>
+
+            <!-- Quiz App -->
+            <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                <img src="https://picsum.photos/600/300?random=5" alt="Quiz App" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-xl font-semibold mb-2">Quiz App</h3>
+                <p class="text-gray-600 mb-4">HTML, CSS, JavaScript</p>
+                <ul class="space-y-2 pl-5 list-disc">
+                    <li>Interactive quiz application with multiple choice questions and score tracking</li>
+                    <li>Dynamic question loading and real-time answer validation</li>
+                    <li>Responsive layout and smooth UI experience</li>
+                </ul>
+            </div>
+
+            <!-- Student Result Management System -->
+            <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                <img src="https://picsum.photos/600/300?random=6" alt="Student Result Management System" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-xl font-semibold mb-2">Student Result Management System</h3>
+                <p class="text-gray-600 mb-4">HTML, CSS, JS, PHP, MySQL</p>
+                <ul class="space-y-2 pl-5 list-disc">
+                    <li>Built a secure portal for admins and students to manage and view results</li>
+                    <li>Implemented login authentication, data validation, and admin dashboard</li>
+                    <li>Real-time updates and efficient database integration</li>
+                </ul>
+            </div>
+
+            <!-- Employee Management System -->
+            <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                <img src="https://picsum.photos/600/300?random=7" alt="Employee Management System" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-xl font-semibold mb-2">Employee Management System</h3>
+                <p class="text-gray-600 mb-4">Java, OOPs</p>
+                <ul class="space-y-2 pl-5 list-disc">
+                    <li>Created a console-based Java application using object-oriented principles</li>
+                    <li>Features include add, update, delete, and search employees</li>
+                    <li>Focus on code reusability, encapsulation, and modularity</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+   
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt text-primary mr-4"></i>
+                            <span>+91-9881601617</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-primary mr-4"></i>
+                            <span>prasadkashid55@gmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-github text-primary mr-4"></i>
+                            <a href="https://github.com/prasad48-code" target="_blank" class="hover:underline">github.com/prasad48-code</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-linkedin text-primary mr-4"></i>
+                            <a href="https://www.linkedin.com/in/prasadkashid/" target="_blank" class="hover:underline">linkedin.com/in/prasadkashid</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">Prasad Kashid</h3>
+                    <p class="text-gray-400">Full Stack Developer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/prasad48-code" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/prasadkashid/" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="mailto:prasadkashid55@gmail.com" class="text-gray-400 hover:text-white">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 Prasad Kashid. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! I will get back to you soon.');
+                form.reset();
+            });
+        }
+    </script>
+</body>
+</html>
